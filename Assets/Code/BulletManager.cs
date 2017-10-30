@@ -24,9 +24,9 @@ namespace Assets.Code
         }
 
         // TODO fill me in
-        public void ForceSpawn (Vector2 pos, Quaternion rotation, Vector2 velocity, float deathtime) {
+        public void ForceSpawn (Vector2 pos, Quaternion rotation, Vector2 velocity) {
             GameObject newBullet = (GameObject) Object.Instantiate(_bullet, pos, rotation, _holder);
-            newBullet.GetComponent<Bullet>().Initialize(velocity, deathtime);
+            newBullet.GetComponent<Bullet>().Initialize(velocity);
         }
     }
 }

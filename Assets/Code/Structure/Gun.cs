@@ -19,8 +19,7 @@ namespace Assets.Code.Structure
             Game.Bullets.ForceSpawn(
                 transform.position + transform.up * 0.7f,
                 transform.rotation,
-                transform.up * 4f,
-                time + Bullet.Lifetime);
+                transform.up * 4f);
         }
     }
 }
