@@ -15,11 +15,14 @@ namespace Assets.Code.Structure
             float time = Time.time;
             if (time < _lastfire + FireCooldown) { return; }
 
+            bool isRed = (gameObject.name == "Player");
+
             _lastfire = time;
             Game.Bullets.ForceSpawn(
                 transform.position + transform.up * 0.7f,
                 transform.rotation,
-                transform.up * 4f);
+                transform.up * 4f,
+                isRed);
         }
     }
 }

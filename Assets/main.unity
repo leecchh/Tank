@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 466335842}
   - component: {fileID: 466335841}
   - component: {fileID: 466335840}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,12 +338,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.4}
-      - {x: -0.6, y: 0}
-      - {x: -0.4, y: -0.34}
-      - {x: 0, y: -0.4}
+    - - {x: 0.026610136, y: 0.4}
+      - {x: -0.2008481, y: -0.106440514}
+      - {x: -0.2935598, y: -0.36661002}
+      - {x: 0, y: -0.37338975}
       - {x: 0.4, y: -0.34}
-      - {x: 0.6, y: 0}
+      - {x: 0.3072884, y: -0.13305077}
 --- !u!4 &466335845
 Transform:
   m_ObjectHideFlags: 0
@@ -352,7 +352,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 466335839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.57, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1023081604}
@@ -539,7 +539,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 587890712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.09, y: 0.05, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 936094451}
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 936094448}
   - component: {fileID: 936094447}
   - component: {fileID: 936094446}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,12 +690,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.4}
-      - {x: -0.6, y: 0}
-      - {x: -0.4, y: -0.34}
-      - {x: 0, y: -0.4}
-      - {x: 0.4, y: -0.34}
-      - {x: 0.6, y: 0}
+    - - {x: -0.02130413, y: 0.4}
+      - {x: -0.28043962, y: -0.06391191}
+      - {x: -0.4000001, y: -0.297392}
+      - {x: 0, y: -0.31478378}
+      - {x: 0.35739207, y: -0.3186959}
+      - {x: 0.23783231, y: -0.06391191}
 --- !u!4 &936094451
 Transform:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 936094445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.03, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 587890713}
@@ -762,7 +762,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1023081603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.69, y: -0.02, z: 0}
+  m_LocalPosition: {x: 0.07, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 466335845}
@@ -914,7 +914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1600497443}
   - component: {fileID: 1600497444}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -950,7 +950,10 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
+  - {x: 0.69114053, y: -2.355811}
+  - {x: -3.3458233, y: -1.0702176}
+  - {x: -2.9978125, y: -3.8010652}
+  - {x: 3.3852067, y: -3.8645892}
 --- !u!1 &1620018615
 GameObject:
   m_ObjectHideFlags: 0

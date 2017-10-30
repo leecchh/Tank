@@ -10,7 +10,9 @@ namespace Assets.Code
     // ReSharper disable once ClassNeverInstantiated.Global
     public class Player : MonoBehaviour
     {
-        private static string _fireaxis;
+        private string _fireaxis;
+        private string _fireaxis2;
+
         private Rigidbody2D _rb;
         private Gun _gun;
 
@@ -20,6 +22,7 @@ namespace Assets.Code
             _gun = GetComponent<Gun>();
 
             _fireaxis = Platform.GetFireAxis();
+            _fireaxis2 = Platform.GetFireAxis2();
         }
 
         // ReSharper disable once UnusedMember.Global
@@ -31,11 +34,22 @@ namespace Assets.Code
         /// Check the controller for player inputs and respond accordingly.
         /// </summary>
         private void HandleInput () {
-            Turn(Input.GetAxis("Horizontal"));
-            Thrust(Input.GetAxis("Vertical"));
-            if (Input.GetAxis(_fireaxis) == 1)
-            {
-                Fire();
+            bool isRed = (gameObject.name == "Player");
+            if (isRed){
+                Turn(Input.GetAxis("Horizontal"));
+                Thrust(Input.GetAxis("Vertical"));
+                if (Input.GetAxis(_fireaxis) == 1)
+                {
+                    Fire();
+                }
+            }
+            else{
+                Turn(Input.GetAxis("Horizontal2"));
+                Thrust(Input.GetAxis("Vertical2"));
+                if (Input.GetAxis(_fireaxis2) == 1)
+                {
+                    Fire();
+                }
             }
         }
 

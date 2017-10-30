@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4916405005834352}
   - component: {fileID: 212349749761576196}
-  - component: {fileID: 70608730062551712}
   - component: {fileID: 50036811683962410}
   - component: {fileID: 114997557056538620}
   - component: {fileID: 114652070296580226}
+  - component: {fileID: 60290624635202624}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
@@ -64,8 +64,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &70608730062551712
-CapsuleCollider2D:
+--- !u!60 &60290624635202624
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -77,8 +77,20 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.11, y: 0.36}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6}
+    newSize: {x: 0.13, y: 0.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.21, y: -0.175}
+      - {x: 0, y: 0.2418}
+      - {x: -0.189, y: -0.178}
 --- !u!114 &114652070296580226
 MonoBehaviour:
   m_ObjectHideFlags: 1

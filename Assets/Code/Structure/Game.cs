@@ -25,10 +25,16 @@ namespace Assets.Code.Structure
             Score2 = GameObject.Find("ScoreText2").GetComponent<ScoreManager>();
             Player = GameObject.Find("Player").GetComponent<Player>();
             Walls = GameObject.Find("Walls").GetComponent<EdgeCollider2D>();
-            wallVertices.Add(new Vector2(0, 0));
-            wallVertices.Add(new Vector2(0, Screen.height));
-            wallVertices.Add(new Vector2(Screen.width, Screen.height));
-            wallVertices.Add(new Vector2(Screen.width, 0));
+
+            var cam = Camera.main;
+            var bottomleft = cam.ViewportToWorldPoint(Vector3.zero);
+            var topright = cam.ViewportToWorldPoint(new Vector3(1f, 1f, 0f));
+
+            wallVertices.Add(new Vector2(bottomleft.x, bottomleft.y));
+            wallVertices.Add(new Vector2(bottomleft.x, topright.y));
+            wallVertices.Add(new Vector2(topright.x, topright.y));
+            wallVertices.Add(new Vector2(topright.x, bottomleft.y));
+            wallVertices.Add(new Vector2(bottomleft.x, bottomleft.y));
             Walls.points = wallVertices.ToArray();
 
             Bullets = new BulletManager(GameObject.Find("Bullets").transform);

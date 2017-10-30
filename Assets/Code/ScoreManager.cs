@@ -12,7 +12,7 @@ namespace Assets.Code
     public class ScoreManager : MonoBehaviour
     {
         public int CurrentScore { get; private set; }
-        private static Text _scoreText;
+        private Text _scoreText;
 
         // ReSharper disable once UnusedMember.Global
         internal void Start () {

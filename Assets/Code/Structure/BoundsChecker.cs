@@ -27,21 +27,7 @@ namespace Assets.Code.Structure
         }
 
         internal void Update () {
-            var pos = _rb.position;
 
-            if (pos.x < _bounds.x) {
-                pos.x = _bounds.z;
-            } else if (pos.x > _bounds.z) {
-                pos.x = _bounds.x;
-            }
-
-            if (pos.y < _bounds.y) {
-                pos.y = _bounds.w;
-            } else if (pos.y > _bounds.w) {
-                pos.y = _bounds.y;
-            }
-
-            _rb.position = pos;
         }
 
         /// <summary>
