@@ -18,7 +18,6 @@ namespace Assets.Code.Structure
             ScoreManager score2 = Game.Score2.GetComponent<ScoreManager>();
 
             if (this.tag=="red" && other.gameObject.name=="Player2"){
-                Debug.Log("red hit blue");
                 score.AddScore(2);
             }
             if (this.tag == "red" && other.gameObject.name == "Player")
@@ -32,7 +31,6 @@ namespace Assets.Code.Structure
             if (this.tag == "blue" && other.gameObject.name == "Player")
             {
                 score2.AddScore(2);
-                Debug.Log("blue hit red");
             }
             Die();
         }

@@ -17,7 +17,7 @@ namespace Assets.Code
     /// Determining the controller "axis" bindings for the particular platform we're on.
     /// This lets the rest of the game ignore whether we're running on Max or Windows.
     /// </summary>
-    public static class Platform
+    public class Platform
     {
         /// <summary>
         /// Determine what platform we're presently running on.
@@ -25,8 +25,8 @@ namespace Assets.Code
         /// <returns>What platform we're running on</returns>
         public static PlatformType GetPlatform () {
             RuntimePlatform platform = Application.platform;
-            return (platform == RuntimePlatform.OSXPlayer) ? PlatformType.Mac :
-                (platform == RuntimePlatform.LinuxPlayer) ? PlatformType.Linux :
+            return (platform == RuntimePlatform.OSXPlayer || platform == RuntimePlatform.OSXEditor) ? PlatformType.Mac :
+                (platform == RuntimePlatform.LinuxPlayer || platform == RuntimePlatform.LinuxEditor) ? PlatformType.Linux :
                 PlatformType.Windows;
         }
 
